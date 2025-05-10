@@ -1,0 +1,206 @@
+/*Eu tinha feito tudo em inline css. Pedi pro chatGpt separar pra mim. Por isso que tá uma mistura de portugues e ingles*/
+
+/*
+Fonte: roboto no h1, diferente no resto
+Decoraçoes: sublinhado na "UTFPR", nos h2 e shadow no h1
+Hover: implementado
+Estilos de fonte: itálico no titulo, normal no resto
+Cores: ok
+CSS: validado
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+}
+/* Seletor por elemento*/
+aside * {
+    color: #eee;
+}
+
+/* Seletor por pseudo-classe */
+a:hover {
+    color: #aaa;
+}
+
+/* Seletor por ID */
+#imagem-principal {
+    object-fit: cover;
+    justify-self: center;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+/* Seletor por Classe */
+.lateral {
+    width: 25%;
+    padding: 10px;
+    background-color: #4D6569;
+    overflow: hidden;
+}
+
+.retangulo {
+    height: 0.7rem;
+    width: 14%;
+    border: 1px solid #eee;
+}
+
+.cheio {
+    background-color: #eee;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    margin-bottom: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.contato li {
+    flex-basis: auto;
+    display: flex;
+    gap: 0.2rem;
+}
+
+ol li {
+    margin-left: 20%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 27cm;
+    width: 21.7cm;
+    background-color: #eee;
+}
+
+.img-ods {
+    width: 80%;
+    aspect-ratio: 1/1;
+}
+
+.section-divider {
+    margin: 1rem auto 0.5rem auto;
+    width: 95%;
+}
+
+.language-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-link {
+    overflow-wrap: anywhere;
+}
+
+.inline-icon {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.ods-container {
+    display: flex;
+    flex: 1;
+    width: 75%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.language-item p {
+    margin-bottom: 0.25rem;
+}
+
+.conteudo-principal {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+    position: relative;
+}
+
+.nome {
+    font-size: xx-large;
+    color: #4D6569;
+    font-style: oblique;
+    text-shadow: 0px 0px 4px #4D6569;
+}
+
+.linha-divisoria {
+    height: 0.5rem;
+    width: 100%;
+    background-color: #4D6569;
+    margin: 10px 0;
+}
+
+.resumo-container {
+    align-items: center;
+    width: 95%;
+}
+
+.titulo-secao {
+    margin-top: 2rem;
+    text-decoration: black wavy underline;
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+.universidade {
+    text-decoration: #4D6569 underline;
+}
+
+.linha-hr {
+    margin-top: 1rem;
+    color: #4D6569;
+    height: 0.25rem;
+    background-color: #4D6569;
+}
+
+.experiencia-topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.experiencia-lista li {
+    margin-left: 1rem;
+    text-align: justify;
+    padding-right: 2rem;
+}
+
+.educacao-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instituicao {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.link-item {
+    margin-left: 1rem;
+}
+
+.rodape {
+    display: flex;
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}

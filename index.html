@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bons Fluidos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        a, a:visited{
+            color: #b91102;
+            text-decoration: none;
+        }
+
+        nav a:hover{
+            transition: 0.5s ease;
+            opacity: 0.7;
+        }
+
+        .carrossel-hover{
+            border-radius: 10px; transition: .5s ease; opacity: 1;
+        }
+
+         .link-carrossel:hover .carrossel-hover{
+            opacity: 0.3;
+        }
+
+        .div-card{
+            opacity: 0;
+        }
+
+        .link-carrossel:hover .div-card{
+            opacity: 1;
+        }
+
+        .cortar-linha {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+
+        .tagesschrift-regular {
+            font-family: "Tagesschrift", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+    </style>
+
+    
+    <nav style="margin: 0 15%">
+        <ul style="list-style-type: none; display: flex; gap: 20px; align-items: center; justify-content: center; padding: 5px 0;">
+            <li><img src="/imagens/logo.png" height="30px" alt="logo-bons-fluidos"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li style="margin-left: auto;"><a href="">Seja Voluntário</a></li>
+        </ul>
+    </nav>
+
+    <section style="display: flex; background-color: #FFEBEC; padding: 0 15%;">
+        <div>
+            <h1 style="color: #b91102; font-size: 2.4rem;text-align: center; margin-top: 3.2rem;">
+                Bons Fluidos:
+            </h1>
+            <p style="color: #b91102; font-size: 2.4rem;text-align: center;  margin-top: 2.4rem;">Combatendo a Pobreza Menstrual</p>
+            <p style="font-size: 1.6rem; width: 50%; text-align: center; color: #e82210; margin: 0 auto; margin-top: 4.8rem;">Levando dignidade para meninas que têm seus direitos à educação prejudicados pela menstruação</p>
+        </div>
+        <img style="margin-left: auto;" src="/imagens/hero.png" height="480px" alt="hero-bons-fluidos">
+    </section>
+
+    <section style="padding: 0 15%; padding-top: 2.4rem; display: flex; align-items: center;">
+        <div style="display: flex; gap: 2.4rem; flex-direction: column;">
+            <h2 style="color: #b91102; font-size: 1.8rem;">Nosso Objetivo</h2>
+            <p style="text-align: justify;">O principal objetivo do projeto é garantir dignidade e promover o direito à educação para meninas em situação de vulnerabilidade menstrual nas escolas públicas de Cornélio Procópio. Para isso, realizamos palestras educativas sobre saúde menstrual e autoestima, buscamos arrecadar e distribuir gratuitamente produtos de higiene menstrual sustentáveis — como absorventes reutilizáveis e coletores menstruais — e fomentamos o diálogo aberto sobre o tema, combatendo estigmas e desinformação. Além de atender diretamente as estudantes, o projeto também visa sensibilizar a comunidade acadêmica e local, promovendo a reflexão sobre a importância da inclusão e equidade no ambiente escolar.</p>
+        </div>
+        <img src="imagens/objetivo.png" height="300" alt="">
+    </section>
+
+    <section style="padding: 0 15%; display: flex; gap: 2.4rem; align-items: center;">
+        <img src="/imagens/equipe.png" height="300" alt="">
+        <div style="display: flex; margin-top: 1.6rem; flex-direction: column; ">
+            <h2 style="color: #b91102; font-size: 1.8rem; gap: 2.4rem; padding-bottom: 2.4rem">Nossa História</h2>
+            <p style="text-align: justify;">O projeto nasceu em 2023, a partir da inquietação de estudantes da Universidade Tecnológica Federal do Paraná — Câmpus Cornélio Procópio, que perceberam a realidade silenciosa vivida por muitas meninas em escolas públicas da cidade. A falta de acesso a produtos de higiene menstrual e a ausência de informações adequadas sobre o ciclo menstrual não apenas comprometem a saúde dessas jovens, mas também impactam diretamente sua permanência e rendimento escolar. Coordenado pela Profa. Dra. Katia Romero Felizardo, o projeto se consolidou como uma iniciativa interdisciplinar, reunindo alun@s de diversos cursos de graduação para transformar a realidade dessas estudantes. Desde então, a equipe já promoveu rodas de conversa, campanhas de arrecadação e atividades educativas em parceria com escolas e instituições locais.</p>
+        </div>
+    </section>
+
+    <section style="padding: 2.4rem 15%; gap: 2.4rem; margin-top: 3.6rem; background-color: #FFEBEC; position: relative;">
+        <h2 style="color: #b91102; font-size: 1.8rem;">Nosso Blog</h2>
+        <div style="display: grid; grid-template-columns: 33% 33% 33%; gap: 1rem; margin-top: 1.6rem">
+            <a href="/index.html" class="link-carrossel" style="border-radius: 10px; position: relative;">
+                <img class="carrossel-hover" src="/imagens/carrossel01.png" width="100%" alt="">
+                <div class="div-card" style="transition: .5s ease; position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); width: 75%; display: flex; align-items: center; flex-direction: column; gap: 0.4rem;">
+                    <h3 style="color: b91102; text-align: center; text-overflow: ellipsis; overflow: hidden;  white-space: nowrap; width: 75%;">Título do Artigo que é absurdamente</h3>
+                    <p class="cortar-linha" style="line-clamp: 2; text-align: justify;">Breve descrição do artigo que deve ser suscinta, mas não muito longa - passar de 2 linhas </p>
+                </div>
+            </a>
+            <a href="/index.html" class="link-carrossel" style="border-radius: 10px; position: relative;">
+                <img class="carrossel-hover" src="/imagens/carrossel02.png" width="100%" alt="">
+                <div class="div-card" style="transition: .5s ease; position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); width: 75%; display: flex; align-items: center; flex-direction: column; gap: 0.4rem;">
+                    <h3 style="color: b91102; text-align: center; text-overflow: ellipsis; overflow: hidden;  white-space: nowrap; width: 75%;">Título do Artigo que é absurdamente</h3>
+                    <p class="cortar-linha" style="line-clamp: 2; text-align: justify;">Breve descrição do artigo que deve ser suscinta, mas não muito longa - passar de 2 linhas </p>
+                </div>
+            </a>
+            <a href="/index.html" class="link-carrossel" style="border-radius: 10px; position: relative;">
+                <img class="carrossel-hover" src="/imagens/carrossel03.png" width="100%" alt="">
+                <div class="div-card" style="transition: .5s ease; position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); width: 75%; display: flex; align-items: center; flex-direction: column; gap: 0.4rem;">
+                    <h3 style="color: b91102; text-align: center; text-overflow: ellipsis; overflow: hidden;  white-space: nowrap; width: 75%;">Título do Artigo que é absurdamente</h3>
+                    <p class="cortar-linha" style="line-clamp: 2; text-align: justify;">Breve descrição do artigo que deve ser suscinta, mas não muito longa - passar de 2 linhas </p>
+                </div>
+            </a>
+        </div>    
+    </section>
+
+    <section style="padding: 2.4rem 15%; gap: 2.4rem; margin-top: 2.4rem;">
+        <h2 style="color: #b91102; font-size: 1.8rem; margin-bottom: 1.6rem;">Cadastre-se como voluntário</h2>
+        <div style="display: flex; align-items: center;">
+            <form action="login.html" method="GET" style="display: flex; flex-direction: column; width: 50%; background-color: #FFEBEC; padding: 1rem; border-radius: 15px; border: #b91102 1px solid;">
+                <label style="color: #e82210;" for="nome">Nome Completo:</label><br>
+                <input style="border: #b91102 1px solid; border-radius: 15px; padding: 0.2rem;" type="text" id="nome" name="nome"><br>
+                <div style="display: flex; flex-direction: row; align-items: center; margin-top: 0.8rem;">
+                    <i class="material-icons" style="color: #e82210;">email</i>
+                    <label style="display: block; color: #e82210; margin-left: 0.2rem" for="email"> Email:</label><br>
+                </div>
+                <input style="border: #b91102 1px solid; border-radius: 15px; padding: 0.2rem;"  type="email" id="email" name="email">
+
+                <div style="display: flex; gap:0.8rem; justify-content: space-between; margin-top: 0.8rem;">
+                    <div style="display: flex; gap: 0.8rem;">
+                        <div style="display: flex; flex-direction: row; align-items: center;;">
+                            <i class="material-icons" style="color: #e82210;">phone</i>
+                            <label style="color: #e82210;margin-left: 0.2rem" for="telefone">Telefone:</label>
+                        </div>
+                        <input placeholder="(XX) XXXXX-XXXX" style="padding: 0.2rem; border: #b91102 1px solid; border-radius: 15px; text-align: center;" type="tel" id="telefone" name="telefone">
+                    </div>
+                    <div>
+                        <label style="color: #e82210;" for="idade">Idade:</label>
+                        <input style="padding: 0.2rem; border: #b91102 1px solid; border-radius: 15px; height: 1.2rem; text-align: center;" type="number" id="telefone" name="telefone" min="18" max="70">
+                    </div>
+                </div>
+
+
+                <label style="margin-top: 0.8rem; color: #e82210;" for="sobre-voce">Conte-nos sobre você:</label>
+                <textarea  style=" resize: none;padding: 0.2rem; border: #b91102 1px solid; border-radius: 15px;" name="sobre-voce" id="sobre-voce" cols="30" rows="10"></textarea>
+
+                <div style="display: flex; align-items: center; justify-content: center;" >
+                    <button style="margin-top: 0.8rem; font-size: medium; border-radius: 10px;  padding: 0.4rem 1rem; background-color: #EB685D; color: white;  border: #b91102 1px solid;" type="submit">Quero Ajudar !</button> 
+                </div>
+            </form>
+            <img width="50%" src="imagens/obrigado.png" alt="">
+        </div>
+    </section>
+
+    <section style="padding: 2.4rem 15%; gap: 2.4rem; margin-top: 2.4rem; background-color: #FFEBEC;">
+        <form action="POST">
+            <h2 style="color: #b91102; font-size: 1.8rem;">Inscreva-se em nossa NewsLetter</h2>
+            <div style="position: relative; display: inline-block; width: 100%; margin-top: 1.6rem;">
+                <input style="padding-right: 1rem; height: 2.4rem; width: 100%; box-sizing: border-box; font-size: medium; border: #b91102 1px solid; border-radius: 10px;" type="text">
+                <button style="position: absolute; height: 2.4rem; right: 0; top: 50%; transform: translateY(-50%); font-size: medium; border-radius: 10px;  padding: 0 1rem; background-color: #EB685D; color: white;  border: #b91102 1px solid;">Inscreva-me !!!</button>
+            </div>
+        </form>
+    </section>
+    <footer style="margin-top: 1.2rem; display: flex; align-items: center; justify-content: center; flex-direction:column; gap: 0.6rem;">
+        <p>Copyright &copy; 2025 Bons Fluidos.</p>
+        <p> Siga-nos no Instragram: @bonsfluidosutfpr</p>
+        <p>Desenvolvido por: <a href="curriculo.html" class="tagesschrift-regular" href="">Marcelo Henrique Guidini Angeli</a></p>
+    </footer>
+</body>
+</html> 
